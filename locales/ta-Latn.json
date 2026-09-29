@@ -1,0 +1,7 @@
+{
+  "language": "Tanglish",
+  "nav": { "dashboard": "Dashboard", "scan": "Pudhiya scan", "history": "Varalaaru", "tracking": "Skin track", "assistant": "AI udhavi", "reports": "Reports", "profile": "Profile", "home": "Veedu" },
+  "common": { "signIn": "Ulnuzhai", "signOut": "Veliyeru", "startScan": "Skin scan-ai thodangu", "explore": "Eppadi seyalpadugiradhu", "save": "Maatrangalai semi", "cancel": "Raththu sei", "back": "Pinnale", "continue": "Thodaru", "notConnected": "Innum inaikkappadavillai", "modelUnavailable": "AI MODEL INAIKKAPPADAVILLAI", "professional": "thagudhiyaana sugaadhaara nipunar" },
+  "medical": { "disclaimer": "VozSkin Scan AI, AI udhaviyaal skin screening thagavalai mattume vazhangum; medical diagnosis alla. Mudivugalai thagudhiyaana sugaadhaara nipunarudan review seyyavum.", "consent": "AI udhaviyaal screening thagavalai pera purindhu kondu sammathikkiren. Indha tool medical diagnosis vazhangaadhu enbadhu purigiradhu.", "screeningOnly": "Screening thagaval mattume · medical diagnosis alla", "noPrediction": "Validate seyyappatta model inaikkappadavillai; screening prediction kidaikkavillai." },
+  "dashboard": { "greeting": "Vanakkam", "title": "Ungal skin health", "empty": "Ungal skin journey inge thodangugiradhu.", "emptyBody": "Kaalappokkil observations-ai track seiyya mudhal scan-ai seyyungal.", "lastScreening": "Kadaisi screening", "screeningLevel": "Tharpodhaiya screening nilai", "totalScans": "Moththa scans", "trackingStatus": "Tracking nilai" }
+}

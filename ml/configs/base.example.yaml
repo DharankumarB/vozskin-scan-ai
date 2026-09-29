@@ -1,0 +1,33 @@
+# Configuration template only. No dataset paths, credentials, metrics, or weights are supplied.
+project_name: vozskin-screening
+seed: 1729
+input_schema_version: "1.0"
+model_name: "UNASSIGNED"
+model_version: "UNASSIGNED"
+
+data:
+  manifest_path: null
+  patient_group_column: patient_group_id
+  image_id_column: image_id
+  label_column: label
+  split_column: split
+  required_splits: [TRAIN, VALIDATION, TEST]
+  patient_level_disjoint: true
+  locked_test: true
+
+training:
+  pretrained_weights: null
+  class_imbalance_strategy: null
+  augmentation_policy: null
+  hyperparameter_search: null
+
+calibration:
+  method: null
+  validation_split_only: true
+  abstention_threshold: null
+
+evaluation:
+  external_validation_manifest: null
+  subgroup_columns: []
+  metrics: [sensitivity, specificity, precision, recall, f1, auroc, auprc, calibration, confusion_matrix]
+  report_path: null

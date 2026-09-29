@@ -1,0 +1,7 @@
+{
+  "language": "English",
+  "nav": { "dashboard": "Dashboard", "scan": "New scan", "history": "History", "tracking": "Skin Track", "assistant": "AI assistant", "reports": "Reports", "profile": "Profile", "home": "Home" },
+  "common": { "signIn": "Sign in", "signOut": "Sign out", "startScan": "Start skin scan", "explore": "Explore how it works", "save": "Save changes", "cancel": "Cancel", "back": "Back", "continue": "Continue", "notConnected": "Not connected", "modelUnavailable": "AI MODEL NOT CONNECTED", "professional": "qualified healthcare professional" },
+  "medical": { "disclaimer": "VozSkin Scan AI provides AI-assisted screening information and does not provide a medical diagnosis. Results should be reviewed with a qualified healthcare professional.", "consent": "I understand and consent to AI-assisted screening information. I understand this tool does not provide a medical diagnosis.", "screeningOnly": "Screening information only · Not a medical diagnosis", "noPrediction": "No screening prediction is available because a validated model is not connected." },
+  "dashboard": { "greeting": "Good morning", "title": "Your Skin Health", "empty": "Your skin journey starts here.", "emptyBody": "Complete your first scan to begin tracking observations over time.", "lastScreening": "Last screening", "screeningLevel": "Current screening level", "totalScans": "Total scans", "trackingStatus": "Tracking status" }
+}
