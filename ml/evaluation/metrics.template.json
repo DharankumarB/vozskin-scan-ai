@@ -1,0 +1,19 @@
+{
+  "status": "NOT_AVAILABLE",
+  "reason": "No validated model or evaluation data is connected.",
+  "patient_level_split_audit": null,
+  "train_patients": null,
+  "validation_patients": null,
+  "test_patients": null,
+  "external_validation": null,
+  "sensitivity": null,
+  "specificity": null,
+  "precision": null,
+  "recall": null,
+  "f1": null,
+  "auroc": null,
+  "auprc": null,
+  "calibration": null,
+  "confusion_matrix": null,
+  "subgroup_evaluation": null
+}

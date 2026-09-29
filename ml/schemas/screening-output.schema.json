@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://vozlookstudios.example/schemas/screening-output-1.0.json",
+  "title": "VozSkin Screening Output",
+  "description": "Validated structured screening information only. This schema is not a medical diagnosis.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["screening_level", "uncertainty", "signals", "recommendation", "model_name", "model_version", "prediction_timestamp", "input_schema_version"],
+  "properties": {
+    "screening_level": { "enum": ["LOW", "MODERATE", "HIGH", "INSUFFICIENT_INFORMATION"] },
+    "probability": { "type": "number", "minimum": 0, "maximum": 1 },
+    "confidence": { "type": "number", "minimum": 0, "maximum": 1 },
+    "image_quality": { "type": "number", "minimum": 0, "maximum": 1 },
+    "uncertainty": { "enum": ["low", "moderate", "high"] },
+    "signals": {
+      "type": "array",
+      "maxItems": 50,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["type", "name", "detected"],
+        "properties": {
+          "type": { "enum": ["visual", "symptom"] },
+          "name": { "type": "string", "minLength": 1, "maxLength": 80 },
+          "detected": { "type": "boolean" }
+        }
+      }
+    },
+    "recommendation": { "enum": ["professional_evaluation", "routine_follow_up", "insufficient_information"] },
+    "model_name": { "type": "string", "minLength": 1, "maxLength": 120 },
+    "model_version": { "type": "string", "minLength": 1, "maxLength": 60 },
+    "prediction_timestamp": { "type": "string", "format": "date-time" },
+    "input_schema_version": { "type": "string", "minLength": 1, "maxLength": 30 }
+  }
+}
